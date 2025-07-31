@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="header">
+    <p id="username"></p>
+    <p id="point"></p>
+    <p id="trueorfalse"></p>
+  </div>
+  <div class="main">
+    <div class="question"><p id="question"></p></div>
+
+    <div class="anwser">
+      <div class="anwserbox"><label>
+        <input type="checkbox" id="anwsera"><span id="a"></span></label>
+     </div>
+      <div class="anwserbox"><label>
+         <input type="checkbox" id="anwserb"><span id="b"></span></label>
+      </div>
+      <div class="anwserbox"><label>
+         <input type="checkbox" id="anwserc"><span id="c"></span></label>
+      </div>
+      <div class="anwserbox"><label>
+         <input type="checkbox" id="anwserd"><span id="d"></span></label>
+      </div>
+      
+      <div class="sumbit"><button onclick="guidapan()">Kiểm tra</button></div>
+    </div>
+    <div class="listofquestion">
+      <div class="qs"><button onclick="question1()" id="question1" >Câu hỏi 1</button></div>
+      <div class="qs"><button onclick="question2()" id="question2" >Câu hỏi 2</button></div>
+      <div class="qs"><button onclick="question3()" id="question3">Câu hỏi 3</button></div>
+    </div>
+  </div>
+  <div class="footer"></div>
+  <script src="index.js"></script>
+</body>
+</html>
