@@ -19,10 +19,10 @@ function question1() {
   currentQuestion = 1;
   document.getElementById("question").innerHTML = "Câu 1: It ... good yesterday, but today it's raining.";
   
-  document.getElementById("a").innerHTML = "a.Was";
-  document.getElementById("b").innerHTML = "b.Is";
-  document.getElementById("c").innerHTML = "c.Has";
-  document.getElementById("d").innerHTML = "d.Have";
+  document.getElementById("a").innerHTML = "a.was";
+  document.getElementById("b").innerHTML = "b.is";
+  document.getElementById("c").innerHTML = "c.has";
+  document.getElementById("d").innerHTML = "d.have";
 
   document.getElementById("question1").style.backgroundColor = "yellowgreen";
 }
