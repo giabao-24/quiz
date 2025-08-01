@@ -5,8 +5,8 @@ document.getElementById("username").innerHTML = "Hello Bao";
 document.getElementById("point").innerHTML = "Điểm: " + point;
 document.getElementById("trueorfalse").innerHTML = "Trình độ A2";
 
-function check(anwser) {
-  if(anwser) {
+function check(answer) {
+  if(answer) {
     point++;
     document.getElementById("trueorfalse").innerHTML = "Đúng";
     document.getElementById("point").innerHTML = "Điểm: " + point;
@@ -51,7 +51,41 @@ function question3() {
   document.getElementById("question3").style.backgroundColor = "yellowgreen";
 }
 
+function question4() {
+  currentQuestion = 4;
+  document.getElementById("question").innerHTML = "Câu 4: If you come ...,don't forget to get off at the stop outside the bank.";
 
+  document.getElementById("a").innerHTML = "a.by foot";
+  document.getElementById("b").innerHTML = "b.by plane";
+  document.getElementById("c").innerHTML = "c.by boat";
+  document.getElementById("d").innerHTML = "d.by bus";
+
+  document.getElementById("question4").style.backgroundColor = "lightblue";
+}
+
+function question5() {
+  currentQuestion = 5;
+  document.getElementById("question").innerHTML = "Câu 5: If I _____ enough money, I would buy a new car, but unfortunately, I can't afford it right now.";
+  
+  document.getElementById("a").innerHTML = "a.have";
+  document.getElementById("b").innerHTML = "b.had";
+  document.getElementById("c").innerHTML = "c.will have";
+  document.getElementById("d").innerHTML = "d.would have";
+
+   document.getElementById("question5").style.backgroundColor = "lightblue";
+}
+
+function question6() {
+  currentQuestion = 6;
+  document.getElementById("question").innerHTML = "Câu 6: She's allergic _____ cats";
+  
+  document.getElementById("a").innerHTML = "a.at";
+  document.getElementById("b").innerHTML = "b.for";
+  document.getElementById("c").innerHTML = "c.to";
+  document.getElementById("d").innerHTML = "d.with";
+
+  document.getElementById("question6").style.backgroundColor = "lightblue";
+}
 
 function changecolor() {
 
@@ -63,18 +97,22 @@ function changecolor() {
 }
 
 function guidapan() {  
-  let anwser;
+  
+  let answer;
   
   if (currentQuestion === 1) {
-    document.getElementById("trueorfalse").innerHTML = "Trình độ A2";
-    anwser = document.getElementById("anwsera").checked;
+    answer = document.getElementById("answera").checked;
   } else if (currentQuestion === 2) {
-    document.getElementById("trueorfalse").innerHTML = "Trình độ A2";
-    anwser = document.getElementById("anwserd").checked;
+    answer = document.getElementById("answerd").checked;
   } else if(currentQuestion === 3) {
-    document.getElementById("trueorfalse").innerHTML = "Trình độ A2";
-    anwser = document.getElementById("anwserc").checked;
+    answer = document.getElementById("answerc").checked;
+  } else if(currentQuestion === 4) {
+    answer = document.getElementById("answerd").checked;
+  } else if(currentQuestion === 5)  {
+    answer = document.getElementById("answerb").checked;
+  } else if(currentQuestion === 6) {
+    answer = document.getElementById("answerc").checked;
   }
   
-  check(anwser);
+  check(answer);
 }

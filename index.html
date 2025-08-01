@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="header">
+  <div class="header" id="header">
     <p id="username"></p>
     <p id="point"></p>
     <p id="trueorfalse"></p>
@@ -16,18 +16,18 @@
   <div class="main">
     <div class="question"><p id="question"></p></div>
 
-    <div class="anwser">
-      <div class="anwserbox"><label>
-        <input type="checkbox" id="anwsera"><span id="a"></span></label>
+    <div class="answer">
+      <div class="answerbox"><label>
+        <input type="radio" name="answer" id="answera"><span id="a"></span></label>
      </div>
-      <div class="anwserbox"><label>
-         <input type="checkbox" id="anwserb"><span id="b"></span></label>
+      <div class="answerbox"><label>
+         <input type="radio" name="answer" id="answerb"><span id="b"></span></label>
       </div>
-      <div class="anwserbox"><label>
-         <input type="checkbox" id="anwserc"><span id="c"></span></label>
+      <div class="answerbox"><label>
+         <input type="radio" name="answer" id="answerc"><span id="c"></span></label>
       </div>
-      <div class="anwserbox"><label>
-         <input type="checkbox" id="anwserd"><span id="d"></span></label>
+      <div class="answerbox"><label>
+         <input type="radio" name="answer" id="answerd"><span id="d"></span></label>
       </div>
       
       <div class="sumbit"><button onclick="guidapan()">Kiểm tra</button></div>
@@ -36,6 +36,9 @@
       <div class="qs"><button onclick="question1()" id="question1" >Câu hỏi 1</button></div>
       <div class="qs"><button onclick="question2()" id="question2" >Câu hỏi 2</button></div>
       <div class="qs"><button onclick="question3()" id="question3">Câu hỏi 3</button></div>
+      <div class="qs"><button onclick="question4()" id="question4">Câu hỏi 4</button></div>
+      <div class="qs"><button onclick="question5()" id="question5">Câu hỏi 5</button></div>
+      <div class="qs"><button onclick="question6()" id="question6">Câu hỏi 6</button></div>
     </div>
   </div>
   <div class="footer"></div>
