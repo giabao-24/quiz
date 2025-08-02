@@ -98,7 +98,7 @@ function question6() {
 
 function question7() {
   currentQuestion = 7;
-  document.getElementById("question").innerHTML = "Câu 7: What is the total after tax she has to pay?";
+  document.getElementById("question").innerHTML = "Câu 7: What is the total after tax she has to pay?[Listening Question]";
   
   document.getElementById("a").innerHTML = "a.11.13$";
   document.getElementById("b").innerHTML = "b.11.32$";
@@ -113,7 +113,7 @@ function question7() {
 
 function question8() {
   currentQuestion = 8;
-  document.getElementById("question").innerHTML = "Câu 8: How many milk options do they have?";
+  document.getElementById("question").innerHTML = "Câu 8: How many milk options do they have?[Listening Question]";
   
   document.getElementById("a").innerHTML = "a.5";
   document.getElementById("b").innerHTML = "b.6";
@@ -128,7 +128,7 @@ function question8() {
 
 function question9() {
   currentQuestion = 9;
-  document.getElementById("question").innerHTML = "Câu 8: Is she trying to gain weight?";
+  document.getElementById("question").innerHTML = "Câu 8: Is she trying to gain weight?[Listening Question]";
    
   document.getElementById("a").innerHTML = "a.Yes";
   document.getElementById("b").innerHTML = "b.No";

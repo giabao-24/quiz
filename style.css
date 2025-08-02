@@ -9,7 +9,7 @@ body {
   height: 250px;
   margin-left: 10%;
   position: fixed;
-  background-color: blue;
+  background-color: rgba(50, 27, 100, 0.297);
 }
 .login input {
   margin-left: 30%;
