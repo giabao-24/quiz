@@ -8,14 +8,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div class="login" id="login">
+    <input type="text" placeholder="Enter Your Name" id="username"><button  onclick="setname()">Okay</button>
+    <p id="ketqua"></p>
+  </div>
   <div class="header" id="header">
-    <p id="username"></p>
+    <p id="nameuser"></p>
     <p id="point"></p>
     <p id="trueorfalse"></p>
+    <div class="audio" id="audio">
+      <audio controls><source  src="Easy English Listening Practice  ESL Daily Conversation Lessons - English Easy Practice.mp3" type="audio/mpeg"></audio>
+    </div>
   </div>
   <div class="main">
     <div class="question"><p id="question"></p></div>
-
     <div class="answer">
       <div class="answerbox"><label>
         <input type="radio" name="answer" id="answera"><span id="a"></span></label>
@@ -39,6 +45,9 @@
       <div class="qs"><button onclick="question4()" id="question4">Câu hỏi 4</button></div>
       <div class="qs"><button onclick="question5()" id="question5">Câu hỏi 5</button></div>
       <div class="qs"><button onclick="question6()" id="question6">Câu hỏi 6</button></div>
+      <div class="qs"><button onclick="question7()" id="question7">Câu hỏi 7</button></div>
+      <div class="qs"><button onclick="question8()" id="question8">Câu hỏi 8</button></div>
+      <div class="qs"><button onclick="question9()" id="question9">Câu hỏi 9</button></div>
     </div>
   </div>
   <div class="footer"></div>

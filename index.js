@@ -1,9 +1,18 @@
 let point = 0;
 let currentQuestion = 0;
-
-document.getElementById("username").innerHTML = "Hello Bao";
+let username = "";
 document.getElementById("point").innerHTML = "Điểm: " + point;
 document.getElementById("trueorfalse").innerHTML = "Trình độ A2";
+
+function setname() {
+  username = document.getElementById("username").value;
+  if(username === "") {
+    document.getElementById("ketqua").innerHTML = "Vui lòng đặt tên!";
+  } else {
+  document.getElementById("login").style.display = "none";
+  document.getElementById("nameuser").innerHTML = "Hello " + username ;
+  }
+}
 
 function check(answer) {
   if(answer) {
@@ -87,6 +96,50 @@ function question6() {
   document.getElementById("question6").style.backgroundColor = "lightblue";
 }
 
+function question7() {
+  currentQuestion = 7;
+  document.getElementById("question").innerHTML = "Câu 7: What is the total after tax she has to pay?";
+  
+  document.getElementById("a").innerHTML = "a.11.13$";
+  document.getElementById("b").innerHTML = "b.11.32$";
+  document.getElementById("c").innerHTML = "c.11.30$";
+  document.getElementById("d").innerHTML = "d.11.3$";
+
+  document.getElementById("question7").style.backgroundColor = "pink";
+  const audio = document.getElementById("audio");
+  audio.style.opacity = "1";
+  audio.style.display = "block";
+}
+
+function question8() {
+  currentQuestion = 8;
+  document.getElementById("question").innerHTML = "Câu 8: How many milk options do they have?";
+  
+  document.getElementById("a").innerHTML = "a.5";
+  document.getElementById("b").innerHTML = "b.6";
+  document.getElementById("c").innerHTML = "c.7";
+  document.getElementById("d").innerHTML = "d.8";
+
+  document.getElementById("question8").style.backgroundColor = "pink";
+  const audio = document.getElementById("audio");
+  audio.style.opacity = "1";
+  audio.style.display = "block";
+}
+
+function question9() {
+  currentQuestion = 9;
+  document.getElementById("question").innerHTML = "Câu 8: Is she trying to gain weight?";
+   
+  document.getElementById("a").innerHTML = "a.Yes";
+  document.getElementById("b").innerHTML = "b.No";
+  document.getElementById("c").innerHTML = "";
+  document.getElementById("d").innerHTML = "";
+  document.getElementById("question9").style.backgroundColor = "pink";
+  const audio = document.getElementById("audio");
+  audio.style.opacity = "1";
+  audio.style.display = "block";
+}
+
 function changecolor() {
 
   document.getElementById("question").innerHTML = "";
@@ -112,6 +165,12 @@ function guidapan() {
     answer = document.getElementById("answerb").checked;
   } else if(currentQuestion === 6) {
     answer = document.getElementById("answerc").checked;
+  } else if(currentQuestion === 7) {
+    answer = document.getElementById("answera").checked;
+  } else if(currentQuestion === 8) {
+    answer = document.getElementById("answerb").checked;
+  } else if(currentQuestion === 9) {
+    answer = document.getElementById("answerb").checked;
   }
   
   check(answer);
