@@ -3,15 +3,22 @@ let currentQuestion = 0;
 let username = "";
 document.getElementById("point").innerHTML = "Điểm: " + point;
 document.getElementById("trueorfalse").innerHTML = "Trình độ A2";
-
-function setname() {
+username = localStorage.getItem("username");
+if(username === "" || username === null || username === undefined) {
+  document.getElementById("login").style.display = "block";
+ function setname() {
   username = document.getElementById("username").value;
   if(username === "") {
     document.getElementById("ketqua").innerHTML = "Vui lòng đặt tên!";
   } else {
   document.getElementById("login").style.display = "none";
-  document.getElementById("nameuser").innerHTML = "Hello " + username ;
+  document.getElementById("nameuser").innerHTML = "Hello " + username;
+  localStorage.setItem("username",username);
   }
+} 
+} else {
+  document.getElementById("login").style.display = "none";
+    document.getElementById("nameuser").innerHTML = "Hello " + username;
 }
 
 function check(answer) {
