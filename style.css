@@ -4,25 +4,6 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
 }
-.leftnavbar {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  align-items: flex-start;
-  justify-content: space-around;
-  width: 10%;
-  height: 700px;
-  background-color: rgb(78, 68, 68);
-  column-gap: 10px;
-}
-.leftnavbar button {
-  margin-top: -40px;
-  width: 60%;
-  height: 40px;
-  border-radius: 5px 5px 5px 5px;
-  align-self: center;
-  background-color: whitesmoke;
-}
 .getnameuser {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,6 @@ let point = 0;
 let currentQuestion = 0;
 let username = "";
 document.getElementById("point").innerHTML = "Điểm: " + point;
-document.getElementById("trueorfalse").innerHTML = "Trình độ A2";
 function setusername() {
 username = document.getElementById("username").value;
 if(username.length === 0) {
