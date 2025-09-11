@@ -9,11 +9,11 @@
 </head>
 <body>
   <div class="leftnavbar" id="leftnavbar">
+    <button onclick="closeleftnavbar()" id="button">Close</button>
     <button onclick="" id="button"></button>
     <button onclick="" id="button"></button>
     <button onclick="" id="button"></button>
     <button onclick="rename()" id="button">Rename</button>
-    <button onclick="closeleftnavbar()" id="button">Close</button>
   </div>
   <div class="getnameuser" id="getnameuser">
     <label for="username">Enter Your User Name<br></label>
@@ -22,7 +22,7 @@
   </div>
 
   <div class="header" id="header">
-    <button id="leftnavbarbutton" onclick="openleftnavbar()"><i class="fa-solid fa-list"></i></button>
+    <button id="leftnavbarbutton" onclick="openleftnavbar()"><span><i class="fa-solid fa-list">Open</i></span></button>
     <p id="nameuser"></p>
     <p id="point"></p>
     <p id="trueorfalse"></p>
